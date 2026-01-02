@@ -1,1 +1,9 @@
+STEP A:
+git config --global user.name "Ammar Azzan"
+git config --global user.email "ammar@example.com"
+git config --global core.editor nano
 
+git config --list
+user.name=Ammar Azzan
+user.email=ammar@example.com
+core.editor=nano
