@@ -35,3 +35,7 @@ refs
 ANSWER (STEP B):
 The local .git directory contains files and directories such as HEAD, config, hooks,
 logs, objects, refs, branches, description, info, and packed-refs.
+
+
+STEP C:
+[The Department of Software Engineering of Işık University](https://www.isikun.edu.tr/akademik/muhendislik-fakultesi/bolumler-ve-programlar/bilgisayar-muhendisligi/programlar/lisans-programi/yazilim-muhendisligi)
