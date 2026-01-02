@@ -1,15 +1,15 @@
 STEP A:
 git config --global user.name "Ammar Azzan"
-git config --global user.email "ammar@example.com"
+git config --global user.email "22comp1048.isik.edu.tr"
 git config --global core.editor nano
 
 git config --list
 user.name=Ammar Azzan
-user.email=ammar@example.com
+user.email=22comp1048@isik.edu.tr
 core.editor=nano
 
 STEP B:
-git clone https://github.com/YOUR_USERNAME/temp.git temp_clone
+git clone https://github.com/AzzanAmmar/temp.git temp_clone
 
 ls
 temp
