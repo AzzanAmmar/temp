@@ -67,3 +67,140 @@ homework4.txt
 
 Files in hwk4 directory on main branch:
 homework4.txt
+
+
+STEP J:
+
+Commits on feature-2 branch:
+$ git log --oneline
+7fa7677 (HEAD -> feature-2, origin/main, origin/feature-2, origin/HEAD, main, feature-3) Merge branch 'feature-1'
+bbcfd51 Answer questions for steps E and F
+b1b3df0 (origin/feature-1, feature-1) satisfying requirement one: Java program for number range
+e779029 setting up gitignore for homework repository
+f29453c Answer markdown link question
+54ae5cd Update README with repository description
+9dcdae6 Step B: clone repository and inspect .git directory
+28958c9 Step B: clone repository and inspect .git directory
+38bee21 Fix Step A git config output
+cea67bf Create homework4.txt
+
+
+
+STEP K:
+feature-3 modifies the existing printRange method to print only even numbers using (i % 2 == 0).
+The change was committed with the message "satisfying requirement change three".
+
+STEP L:
+feature-2 was merged into main. Merge conflicts were resolved so main reflected only the odd-number
+printing functionality from feature-2.
+
+STEP M:
+feature-3 was merged into main. Merge conflicts were resolved so main reflected the even-number
+printing functionality from feature-3.
+
+STEP QUESTION:
+Differences between branches using git diff:
+
+- feature-1 vs main:
+feature-1 prints all numbers between the inputs.
+main prints only even numbers.
+
+- feature-2 vs main:
+feature-2 prints only odd numbers.
+main prints only even numbers.
+
+- feature-3 vs main:
+No differences. feature-3 and main both print only even numbers.
+
+
+The following is the raw terminal output 
+
+diff --git a/hwk4/RangePrinter.java b/hwk4/RangePrinter.java
+index 3d96d6d..7d79a18 100644
+--- a/hwk4/RangePrinter.java
++++ b/hwk4/RangePrinter.java
+@@ -1,27 +1,23 @@
+ import java.util.Scanner;
+
+ public class RangePrinter {
+-
+     public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+
+-        System.out.print("Enter the first number: ");
+-        int start = scanner.nextInt();
+-
+-        System.out.print("Enter the second number: ");
+-        int end = scanner.nextInt();
++        System.out.print("Enter first number: ");
++        int a = scanner.nextInt();
+
+-        printRange(start, end);
++        System.out.print("Enter second number: ");
++        int b = scanner.nextInt();
+:...skipping...
+diff --git a/hwk4/RangePrinter.java b/hwk4/RangePrinter.java
+index 3d96d6d..7d79a18 100644
+--- a/hwk4/RangePrinter.java
++++ b/hwk4/RangePrinter.java
+@@ -1,27 +1,23 @@
+ import java.util.Scanner;
+
+ public class RangePrinter {
+-
+     public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+
+-        System.out.print("Enter the first number: ");
+-        int start = scanner.nextInt();
+-
+-        System.out.print("Enter the second number: ");
+-        int end = scanner.nextInt();
++        System.out.print("Enter first number: ");
++        int a = scanner.nextInt();
+
+-        printRange(start, end);
++        System.out.print("Enter second number: ");
++        int b = scanner.nextInt();
+
+-        scanner.close();
+-    }
++        int start = Math.min(a, b);
++        int end = Math.max(a, b);
+
+-public static void printRange(int start, int end) {
+-    for (int i = start + 1; i < end; i++) {
+-        if (i % 2 == 0) {
++        for (int i = start + 1; i < end; i++) {
+             System.out.println(i);
+         }
++
++        scanner.close();
+     }
+ }
+
+-}
+diff --git a/hwk4/homework4.txt b/hwk4/homework4.txt
+index e4f8a35..5b8f128 100644
+--- a/hwk4/homework4.txt
++++ b/hwk4/homework4.txt
+@@ -54,16 +54,3 @@ Ignored patterns include:
+ .vscode/
+ .DS_Store
+ Thumbs.db
+-
+-
+-STEP E–F:
+-
+-Commits on feature-1 branch:
+-b1b3df0 satisfying requirement one: Java program for number range
+-
+-Files in hwk4 directory on feature-1 branch:
+-RangePrinter.java
+-homework4.txt
+-
+-Files in hwk4 directory on main branch:
+-homework4.txt
+~
+~
+
