@@ -7,3 +7,31 @@ git config --list
 user.name=Ammar Azzan
 user.email=ammar@example.com
 core.editor=nano
+
+STEP B:
+git clone https://github.com/YOUR_USERNAME/temp.git temp_clone
+
+ls
+temp
+temp_clone
+
+ls -la
+.git
+hwk4
+...
+
+ls .git
+HEAD
+branches
+config
+description
+hooks
+info
+logs
+objects
+packed-refs
+refs
+
+ANSWER (STEP B):
+The local .git directory contains files and directories such as HEAD, config, hooks,
+logs, objects, refs, branches, description, info, and packed-refs.
