@@ -39,3 +39,18 @@ logs, objects, refs, branches, description, info, and packed-refs.
 
 STEP C:
 [The Department of Software Engineering of Işık University](https://www.isikun.edu.tr/akademik/muhendislik-fakultesi/bolumler-ve-programlar/bilgisayar-muhendisligi/programlar/lisans-programi/yazilim-muhendisligi)
+
+
+STEP D:
+The .gitignore file includes rules to ignore compiled Java class files, packaged
+archives, log files, IDE-specific directories, operating system generated files,
+and temporary files.
+
+Ignored patterns include:
+*.class
+*.jar
+*.log
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
