@@ -54,3 +54,16 @@ Ignored patterns include:
 .vscode/
 .DS_Store
 Thumbs.db
+
+
+STEP E–F:
+
+Commits on feature-1 branch:
+b1b3df0 satisfying requirement one: Java program for number range
+
+Files in hwk4 directory on feature-1 branch:
+RangePrinter.java
+homework4.txt
+
+Files in hwk4 directory on main branch:
+homework4.txt
